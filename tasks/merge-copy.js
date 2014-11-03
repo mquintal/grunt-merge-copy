@@ -7,8 +7,8 @@ module.exports = function( grunt ) {
     grunt.registerMultiTask( 'merge-copy', 'Merge two directories', function() {
         var options = {
 			common: this.options().common || 'common'
-		  , specific: this.options().common || 'specific'
-		  , encoding: this.options().common || grunt.file.defaultEncoding
+		  , specific: this.options().specific || 'specific'
+		  , encoding: this.options().encoding || grunt.file.defaultEncoding
 		};
 		
 		var copyOptions = {
@@ -90,7 +90,7 @@ module.exports = function( grunt ) {
             var commonPath = ''
               , specificPath = ''
               , arrResult = []
-              , fileFound = false;//JSON.parse( JSON.stringify( commonFiles ) );
+              , fileFound = false;
             
             basePath = path.resolve( basePath, '.' );
             
@@ -152,8 +152,9 @@ module.exports = function( grunt ) {
         
         
         this.files.forEach( function( filePair ) {
-            var commonDir = filePair.src[0] + '/' + options.common
-              , specificDir = filePair.src[0] + '/' + options.specific
+            var source = grunt.util.kindOf( filePair.src ) === 'array' ? filePair.src[0] : filePair ||''
+              , commonDir =  [ source, options.common ].join( '/' )
+              , specificDir = [ source, options.specific ].join( '/' )
               , files = null; 
               
             

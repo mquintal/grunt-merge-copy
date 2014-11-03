@@ -13,8 +13,8 @@
     "javascript"
   ],
   "author": {
-    "name": "Miguel Quintal"
-	"url": "http://www.mquintal.com"
+    "name": "Miguel Quintal",
+	  "url": "http://www.mquintal.com"
   },
   "repository": {
     "type": "git",
