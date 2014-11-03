@@ -49,13 +49,17 @@ The file encoding to copy files with.
 
 Assuming you have following project structure:
 
-app
-    base
-        apple.html
-        berry.html
-    client
-        apple.html
-Gruntfile.js
+
+```shell
+.
+└── app
+    └── base 
+    	├── apple.html
+    	├──  berry.html
+    └── clientx
+        ├──  apple.html
+├── Gruntfile.js
+```
 
 Applying following merge-copy configuration:
 
@@ -73,14 +77,17 @@ Applying following merge-copy configuration:
 
 Result:
 
-app
-    base
-        apple.html
-        berry.html
-    client
-        apple.html
-dist
-    apple.html ( file from client directory )
-    berry.html
-Gruntfile.js
+```shell
+.
+└── app
+    └── base 
+    	├── apple.html
+    	├──  berry.html
+    └── clientx
+        ├──  apple.html
+└── dist
+    ├── apple.html ( file from client directory )
+    ├──  berry.html	
+├── Gruntfile.js
+```
 
