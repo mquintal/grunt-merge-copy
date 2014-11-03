@@ -86,7 +86,7 @@ Result:
     └── clientx
         ├──  apple.html
 └── dist
-    ├── apple.html ( file from client directory )
+    ├── apple.html ( file from clientx directory )
     ├──  berry.html	
 ├── Gruntfile.js
 ```
