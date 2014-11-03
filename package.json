@@ -1,0 +1,36 @@
+{
+  "name": "grunt-merge-copy",
+  "version": "0.0.4",
+  "description": "This grunt task is responsible for copying files",
+  "homepage": "https://github.com/mquintal/grunt-merge-copy",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grunt",
+    "copy",
+    "merge",
+    "javascript"
+  ],
+  "author": {
+    "name": "Miguel Quintal"
+	"url": "http://www.mquintal.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mquintal/grunt-merge-copy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mquintal/grunt-merge-copy/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0"
+  },
+   "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "license": "ISC",
+  "readme": "ERROR: No README data found!",
+  "_id": "grunt-merge-copy@0.0.1",
+  "_from": "grunt-merge-copy@"
+}
