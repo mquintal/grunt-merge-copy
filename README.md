@@ -49,7 +49,15 @@ The file encoding to copy files with.
 
 Assuming you have following project structure:
 
-...
+app
+    base
+        apple.html
+        berry.html
+    client
+        apple.html
+Gruntfile.js
+
+Applying following merge-copy configuration:
 
 ```js
  'merge-copy': {
@@ -62,3 +70,17 @@ Assuming you have following project structure:
 	}
  }
 ```
+
+Result:
+
+app
+    base
+        apple.html
+        berry.html
+    client
+        apple.html
+dist
+    apple.html ( file from client directory )
+    berry.html
+Gruntfile.js
+
