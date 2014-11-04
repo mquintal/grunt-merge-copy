@@ -35,7 +35,7 @@ module.exports = function( grunt ) {
                 });
                 
             } else {
-                grunt.log.errorlns( 'Directory "', path, '" NOT FOUND.' );
+                grunt.log.errorlns( 'Directory "', basePath, '" NOT FOUND.' );
             }
             
             return arrFiles;

@@ -51,7 +51,6 @@ Assuming you have following project structure:
 
 
 ```shell
-.
 └── app
     └── base 
     	├── apple.html
@@ -70,7 +69,7 @@ Applying following merge-copy configuration:
 		specific: 'clientx'
 	},
 	main: {
-		file: [ { src: 'app', dest: 'dist' } ]
+		files: [ { src: 'app', dest: 'dist' } ]
 	}
  }
 ```
@@ -78,7 +77,6 @@ Applying following merge-copy configuration:
 Result:
 
 ```shell
-.
 └── app
     └── base 
     	├── apple.html
