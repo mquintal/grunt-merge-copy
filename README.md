@@ -1,4 +1,4 @@
-# grunt-merge-copy v0.0.4
+# grunt-merge-copy v0.0.6
 
 > Merge two directories.
 
@@ -54,9 +54,9 @@ Assuming you have following project structure:
 └── app
     └── base 
     	├── apple.html
-    	├──  berry.html
+    	├── berry.html
     └── clientx
-        ├──  apple.html
+        ├── apple.html
 ├── Gruntfile.js
 ```
 
@@ -80,12 +80,12 @@ Result:
 └── app
     └── base 
     	├── apple.html
-    	├──  berry.html
+    	├── berry.html
     └── clientx
-        ├──  apple.html
+        ├── apple.html
 └── dist
     ├── apple.html ( file from clientx directory )
-    ├──  berry.html	
+    ├── berry.html	
 ├── Gruntfile.js
 ```
 
