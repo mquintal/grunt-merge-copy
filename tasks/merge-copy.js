@@ -93,34 +93,43 @@ module.exports = function( grunt ) {
               , fileFound = false;
             
             basePath = path.resolve( basePath, '.' );
-            
+
             for( var common in commonFiles ) {
                 if( commonFiles.hasOwnProperty( common ) ) {
                     fileFound = false;
                     commonPath = getRelativePath( basePath, commonFiles[ common ] );
-                    
+
                     if( specificFiles ) {
-                        
+
                         specificFiles.forEach( function( file ) {
                             specificPath = getRelativePath( basePath, file );
-                            
-                            // Check if relative and common are equal. 
+
+                            // Check if relative and common are equal.
                             if( specificPath === commonPath ) {
                                 // Delete this index from result array.
                                 arrResult.push( { relative: specificPath, absolute: file } );
                                 fileFound = true;
                                 return ;
                             }
-                            
+
                         });
-                        
+
                     }
-                    
+
                     if( !fileFound ) {
                         arrResult.push( { relative: commonPath, absolute: commonFiles[ common ] } );
                     }
-                    
+
                 }
+            }
+
+            if( specificFiles ) {
+                specificFiles.forEach( function( file ) {
+                    if( !commonFiles.hasOwnProperty( file ) ) {
+                        specificPath = getRelativePath( basePath, file );
+                        arrResult.push( { relative: specificPath, absolute: file } );
+                    }
+                });
             }
             
             return arrResult;
