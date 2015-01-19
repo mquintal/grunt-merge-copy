@@ -1,4 +1,4 @@
-# grunt-merge-copy v0.0.6
+# grunt-merge-copy v0.0.7
 
 > Merge two directories.
 
