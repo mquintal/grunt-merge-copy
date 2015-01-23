@@ -18,7 +18,7 @@ module.exports = function( grunt ) {
 
         var files = mergeCollectFiles( options.directories, options.patterns );
 
-        for ( var key in files ) {
+        for ( var relativeFilePath in files ) {
             if ( files.hasOwnProperty( relativeFilePath ) ) {
                 var fileInfo = files[ relativeFilePath ];
 
