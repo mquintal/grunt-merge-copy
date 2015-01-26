@@ -34,6 +34,6 @@
   "_id": "grunt-merge-copy@0.0.4",
   "_from": "grunt-merge-copy@",
   "dependencies": {
-    "node-merge-collect-files": "^0.2.3"
+    "node-merge-collect-files": "^0.3.0"
   }
 }
