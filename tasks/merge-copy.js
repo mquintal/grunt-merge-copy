@@ -16,7 +16,7 @@ module.exports = function( grunt ) {
         };
 
 
-        var files = mergeCollectFiles( options.directories, options.patterns );
+        var files = mergeCollectFiles( options.directories, options.patterns, options.globOptions );
 
         for ( var relativeFilePath in files ) {
             if ( files.hasOwnProperty( relativeFilePath ) ) {

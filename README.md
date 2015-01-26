@@ -58,6 +58,12 @@ Default: `**/*`
 
 Optionally filter the files by one or more glob patterns.
 
+#### globOptions
+Type: `Object`
+Default: `{ nonull: false, dot: true }`
+
+Optionally set some glob options.
+
 
 ### Usage Examples
 
@@ -106,6 +112,10 @@ Result:
 ```
 
 ## Release History
+
+__0.2.0__
+
+  * Added support for setting glob options.
 
 __0.1.0__
 
