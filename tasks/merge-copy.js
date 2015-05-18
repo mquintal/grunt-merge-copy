@@ -19,5 +19,4 @@ module.exports = function( grunt ) {
 		// Copy all merged file to the destination.
 		mergeCopy.copy(files || []);
     });
-
 };
