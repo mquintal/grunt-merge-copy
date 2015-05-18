@@ -1,6 +1,6 @@
 {
   "name": "grunt-merge-copy",
-  "version": "0.0.6",
+  "version": "0.2.0",
   "description": "Merge two directories",
   "homepage": "https://github.com/mquintal/grunt-merge-copy",
   "scripts": {
@@ -14,7 +14,7 @@
   ],
   "author": {
     "name": "Miguel Quintal",
-	  "url": "http://www.mquintal.com"
+    "url": "http://www.mquintal.com"
   },
   "repository": {
     "type": "git",
@@ -26,11 +26,14 @@
   "devDependencies": {
     "grunt": "~0.4.0"
   },
-   "peerDependencies": {
+  "peerDependencies": {
     "grunt": "~0.4.0"
   },
   "license": "ISC",
   "readmeFilename": "README.md",
   "_id": "grunt-merge-copy@0.0.4",
-  "_from": "grunt-merge-copy@"
+  "_from": "grunt-merge-copy@",
+  "dependencies": {
+    "node-merge-collect-files": "^0.3.0"
+  }
 }
