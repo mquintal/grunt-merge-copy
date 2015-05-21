@@ -3,7 +3,6 @@ describe('merge-copy tests', function() {
 	var fs = require('fs');
 	var expect = require('chai').expect;
 	var mergeCopy = require('../lib/merge-copy')(grunt);
-	
 	var merge;
 	var TARGET_DIR = 'test/mockProject/target/';
 	
