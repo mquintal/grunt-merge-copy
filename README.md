@@ -113,7 +113,7 @@ Result:
 
 ## Release History
 
-__0.2.1__
+__1.0.0__
   
   * Implement tests to ensure that module has the correct behaviour in different situations;
   * Split code to get better organization and to be testable.
