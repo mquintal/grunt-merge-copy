@@ -1,6 +1,6 @@
 {
   "name": "grunt-merge-copy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Merge two directories",
   "homepage": "https://github.com/mquintal/grunt-merge-copy",
   "scripts": {
